@@ -1,0 +1,131 @@
+/*
+Ronald Catún 19789
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: green;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+h1.title {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid green;
+}
+
+#nombre {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+#usuario {
+  font-size: 0.85rem;
+  color: green;
+  margin-top: 0.2rem;
+}
+
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-list li {
+  font-size: 0.9rem;
+  color: #444;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+#etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.etiqueta {
+  background-color: #e8f5e9;
+  color: green;
+  border: 1px solid green;
+  border-radius: 20px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+#btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: darkgreen;
+}
+
+#mensaje {
+  text-align: center;
+  font-size: 0.85rem;
+  color: green;
+  margin-top: 0.75rem;
+  min-height: 1.2rem;
+}
+
+#mensaje.error {
+  color: red;
+}
